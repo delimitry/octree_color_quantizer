@@ -118,8 +118,8 @@ class OctreeNode(object):
         Get average color
         """
         return Color(
-            self.color.red / self.pixel_count, 
-            self.color.green / self.pixel_count,  
+            self.color.red / self.pixel_count,
+            self.color.green / self.pixel_count,
             self.color.blue / self.pixel_count)
 
 
@@ -165,7 +165,7 @@ class OctreeQuantizer(object):
         palette_index = 0
         leaf_count = len(self.get_leaves())
         # reduce nodes
-        # up to 8 leaves can be reduced here and the palette will have 
+        # up to 8 leaves can be reduced here and the palette will have
         # only 248 colors (in worst case) instead of expected 256 colors
         for level in xrange(OctreeQuantizer.MAX_DEPTH - 1, -1, -1):
             if self.levels[level]:
@@ -178,7 +178,7 @@ class OctreeQuantizer(object):
                 self.levels[level] = []
         # build palette
         for node in self.get_leaves():
-            if palette_index >= color_count: 
+            if palette_index >= color_count:
                 break
             if node.is_leaf():
                 palette.append(node.get_color())

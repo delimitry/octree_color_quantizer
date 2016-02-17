@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf8 -*-
 
+
 class Color(object):
     """
     Color class

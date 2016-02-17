@@ -13,12 +13,12 @@ def main():
 
     octree = OctreeQuantizer()
 
-    # add colors to the octree  
+    # add colors to the octree
     for j in xrange(height):
         for i in xrange(width):
             octree.add_color(Color(*pixels[i, j]))
 
-    # 256 colors for 8 bits per pixel output image 
+    # 256 colors for 8 bits per pixel output image
     palette = octree.make_palette(256)
 
     # create palette for 256 color max and save to file
