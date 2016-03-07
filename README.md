@@ -4,8 +4,10 @@ Octree color quantizer in Python
 
 Description:
 ------------
-Octree Quantizer for image color quantization.
-Implemented using one of the most popular algorithm of octree color quantization.
+Octree Quantizer for image color quantization.  
+Implemented using one of the most popular algorithm of octree color quantization.  
+Description of the algorithm on by blog:
+http://delimitry.blogspot.com/2016/02/octree-color-quantizer-in-python.html
 
 Original image (24 bit):
 
